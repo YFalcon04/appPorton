@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:padding="16dp"
+    android:background="@drawable/fondo"
+    android:id="@+id/main"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/orange2"
+        >
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_porton"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:gravity="start"
+            />
+
+        <ImageView
+            android:id="@+id/header_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/tuerca"
+            android:src="@drawable/tuerca"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/historial_de_uso"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginVertical="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/img" />
+
+
+
+    <TableRow
+        android:background="@color/orange2"
+        android:layout_marginVertical="20dp">
+        <TextView
+            android:text="@string/usuario"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:padding="3dp"/>
+        <TextView
+            android:text="@string/accion"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:padding="3dp"/>
+        <TextView
+            android:text="@string/fecha"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:padding="3dp"/>
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:text="@string/juan"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:text="@string/abrio"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:text="@string/fecha1"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textSize="16sp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:background="@color/white"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:text="@string/juan"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:text="@string/cerrar"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:text="@string/fecha2"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textSize="16sp"
+            />
+
+    </TableRow>
+
+
+</TableLayout>
